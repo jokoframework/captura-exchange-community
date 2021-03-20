@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>py.com.sodep.captura</groupId>
 	<artifactId>captura-exchange</artifactId>
-	<version>0.0.10</version>
+	<version>0.0.11</version>
 	<name>captura_exchange</name>
 	<description>Objects for network exchange</description>
 	<properties>

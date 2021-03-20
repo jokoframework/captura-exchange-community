@@ -12,8 +12,6 @@ public class MFDeviceInfo {
 
 	private String versionNumber;
 
-	private String phoneNumber;
-
 	private String manufacturer;
 
 	private String product;
@@ -73,14 +71,6 @@ public class MFDeviceInfo {
 		this.versionNumber = versionNumber;
 	}
 
-	public String getPhoneNumber() {
-		return phoneNumber;
-	}
-
-	public void setPhoneNumber(String phoneNumber) {
-		this.phoneNumber = phoneNumber;
-	}
-
 	/**
 	 * 
 	 * @return
@@ -119,7 +109,6 @@ public class MFDeviceInfo {
 		result = prime * result + ((manufacturer == null) ? 0 : manufacturer.hashCode());
 		result = prime * result + ((model == null) ? 0 : model.hashCode());
 		result = prime * result + ((os == null) ? 0 : os.hashCode());
-		result = prime * result + ((phoneNumber == null) ? 0 : phoneNumber.hashCode());
 		result = prime * result + ((product == null) ? 0 : product.hashCode());
 		result = prime * result + ((release == null) ? 0 : release.hashCode());
 		result = prime * result + ((versionNumber == null) ? 0 : versionNumber.hashCode());
@@ -180,13 +169,6 @@ public class MFDeviceInfo {
 		} else if (!os.equals(other.os)) {
 			return false;
 		}
-		if (phoneNumber == null) {
-			if (other.phoneNumber != null) {
-				return false;
-			}
-		} else if (!phoneNumber.equals(other.phoneNumber)) {
-			return false;
-		}
 		if (product == null) {
 			if (other.product != null) {
 				return false;
@@ -213,9 +195,16 @@ public class MFDeviceInfo {
 
 	@Override
 	public String toString() {
-		return "MFDeviceInfo [os=" + os + ", identifier=" + identifier + ", brand=" + brand + ", model=" + model
-				+ ", versionNumber=" + versionNumber + ", phoneNumber=" + phoneNumber + ", manufacturer="
-				+ manufacturer + ", product=" + product + ", release=" + release + ", id=" + id + "]";
+		return "MFDeviceInfo{" +
+				"os='" + os + '\'' +
+				", identifier='" + identifier + '\'' +
+				", brand='" + brand + '\'' +
+				", model='" + model + '\'' +
+				", versionNumber='" + versionNumber + '\'' +
+				", manufacturer='" + manufacturer + '\'' +
+				", product='" + product + '\'' +
+				", release='" + release + '\'' +
+				", id=" + id +
+				'}';
 	}
-
 }
